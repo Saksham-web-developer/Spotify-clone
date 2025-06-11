@@ -1,0 +1,376 @@
+
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+    background-color: #000;
+}
+.main{
+    background-color: black;
+    display: flex;
+}
+.side-bar{
+    height: 100vh;
+    color: white;
+    width: 20rem;
+}
+.main-content{
+    height: 100vh;
+    flex: 1;
+    color: white;
+    background-color: #121212;
+    border-radius: 0.6rem;
+    padding: 0 1rem;
+    margin-top: 0.5rem;
+}
+.music-player{
+    color: white;
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 0.6rem;
+    margin: 0.4rem;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 5rem;
+    /* align-items: center; */
+}
+.nav-option{
+    padding: 0.3rem 0 0.4rem 0.4rem;
+    margin: 0 0.3rem;
+    opacity: 0.7;
+}
+.nav-option a{
+    text-decoration: none;
+    color: white;
+    margin-left: 0.5rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.library{
+    background-color: #121212;
+    border-radius: 0.6rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.lib-option img{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: 0 1rem;
+    opacity: 0.7;
+}
+.lib-option a{
+    text-decoration: none;
+    color: white;
+    padding: 0 0 0.1rem 0;
+    margin: 0 0 1rem 0;
+    opacity: 0.7;
+}
+.lib-option a:hover{
+    opacity: 1;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+}
+.icons {
+    width: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.icons i{
+    opacity: 0.7;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box{
+    background-color: #232323;
+    border-radius: 0.6rem ;
+    padding: 0.4rem 0.5rem 1.1rem 1rem;
+    margin: 1rem 0;
+}
+.box-p1{
+    font-weight: 700;
+}
+.box-p2{
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-bottom: 1.1rem;
+}
+.badge{
+    border-radius: 1rem;
+    padding: 0.4rem 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.badge:hover{
+    transform: scale(1.05);
+}
+.nav-bar{
+    height: 4rem;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.nav-img img{
+    background-color: #000;
+    border-radius: 50%;
+    padding: 0.4rem;
+    height: 1.1rem;
+    width: 1.1rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.nav-button{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    width: 70%;
+}
+@media (max-width: 800px) {
+    .button-1, .button-2{
+        display: none;
+    }
+}
+.nav-button i{
+    margin-right: 0.5rem;
+}
+.nav-button button{
+    margin: 0 1rem 0 0;
+}
+.fa-user{
+    margin-top: 0.5rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.fa-user:hover{
+    opacity: 1;
+}
+.nav-img img:hover{
+    opacity: 1;
+}
+.dark-button{
+    background-color: #000;
+    color: #fff;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading p{
+    font-weight: 600;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.heading p:hover{
+    opacity: 1;
+}
+.card-section{
+    /* margin: 2rem 0; */
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    /* overflow-y: auto; */
+}
+.card-section h2{
+    margin: 0.5rem;
+}
+.card-box img{
+    width: 10rem;
+    height: 10rem;
+    margin-top: 0.8rem;
+}
+.card-box{
+    background-color: #191919;
+    border-radius: 0.6rem ;
+    padding: 0.4rem 0.5rem 1.1rem 1rem;
+    margin: 1.1rem 0; 
+    width: 10.5rem;  
+    height: 16.5rem;
+    margin: 1rem 1.5rem 1rem 1.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.card-box:hover{
+    transform: scale(1.03);
+}
+.outer-hide{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hide{
+    height: 10rem;
+    width: 90%;
+    border-top: 1px solid #fff;
+    margin-top: 5rem;
+}
+.album{
+    width: 25%;
+    color: #fff;
+    /* background-color: yellow; */
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    color: #fff;
+    margin-top: 1rem;
+}
+.controls{
+    width: 25%;
+    color: #fff;
+}
+.player-icons img{
+    height: 0.8rem;
+    width: 0.8rem;
+    margin: 0.5rem 0.8rem;
+    opacity: 0.7;
+}
+.player-icons{
+    display: flex;
+    justify-content: center;
+
+}
+.player-icons>img{
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.player-icons>img:hover{
+    opacity: 1;
+}
+.player-timer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-top: -0.6rem;
+    gap: 0.6rem;
+}
+.play img{
+    height: 2rem;
+    width: 2rem;
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.play img:hover{
+    transform: scale(1.1);
+}
+.player-timer div{
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+.player-timer input {
+    width: 25rem;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.player-timer input::-webkit-slider-runnable-track{
+    height: 0.2rem;
+    background-color: #ddd;
+    border-radius: 100px;
+}
+.player-timer input::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.album{
+    display: flex;
+}
+.album>img{
+    padding: 0.6rem;
+    margin-left: 1rem;
+}
+.album-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+.album-name a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7rem;
+    margin: 0.17rem;
+}
+.album-name a:hover{
+    text-decoration: underline;
+}
+.album-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.album-icons img{
+    height: 1.5rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.album-icons img:hover{
+    opacity: 1;
+}
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.controls img{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.same{
+    height: 2rem;
+}
+.controls img:hover{
+    opacity: 1;
+}
+.controls input{
+    width: 5rem;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.controls input::-webkit-slider-runnable-track{
+    height: 0.2rem;
+    background-color: #ddd;
+    border-radius: 100px;
+}
+.controls input::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
